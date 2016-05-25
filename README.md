@@ -16,6 +16,8 @@ You can then use it in an ES6 style
 import Push from 'pushjs';
 ```
 
+[View a demo](http://chrismasters.net/ember-cli-push-js-shim/)
+
 ## Installation
 
 * `git clone` this repository
