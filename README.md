@@ -4,7 +4,7 @@ This is a simple wrapper for [Push.js](http://nickersoft.github.io/push.js/) whi
 
 To include in your project install the addon as usual
 
-```js
+```bash
 ember install ember-cli-push-js-shim
 ```
 
