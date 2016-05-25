@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-push-js-shim",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An Ember CLI shim for the push.js notifcation library as ES6 import",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -39,7 +39,9 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "notifications",
+    "push-js"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6"
