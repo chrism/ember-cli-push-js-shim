@@ -5,7 +5,6 @@ export default Ember.Route.extend({
   actions: {
     createNotification() {
       Push.create('Hello World!');
-      Ember.Logger.log('no of alerts', Push.count);
     }
   }
 });
