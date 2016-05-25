@@ -1,6 +1,18 @@
 # Ember-cli-push-js-shim
 
-This README outlines the details of collaborating on this Ember addon.
+This is a simple wrapper for [Push.js](http://nickersoft.github.io/push.js/) which allows you to easily create native cross-browser notifications.
+
+To include in your project install the addon as usual
+
+```js
+ember install ember-cli-push-js-shim
+```
+
+You can then use it in an ES6 style
+
+```js
+import Push from 'pushjs';
+```
 
 ## Installation
 
