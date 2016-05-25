@@ -50,6 +50,7 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
+    "demoURL": "http://chrismasters.net/ember-cli-push-js-shim/",
     "versionCompatibility": {
       "ember": ">1.13.0"
     }
