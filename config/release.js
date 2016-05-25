@@ -6,7 +6,7 @@ module.exports = {
   // local: true,
   // remote: 'some_remote',
   // annotation: "Release %@",
-  // message: "Bumped version to %@",
+  message: "Bumped version to %@",
   manifest: [ 'package.json', 'bower.json' ],
   // publish: true,
   // strategy: 'date',
