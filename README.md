@@ -1,5 +1,7 @@
 # Ember-cli-push-js-shim
 
+[![Build Status](https://travis-ci.org/chrism/ember-cli-push-js-shim.svg?branch=master)](https://travis-ci.org/chrism/ember-cli-push-js-shim)
+
 This is a simple wrapper for [Push.js](http://nickersoft.github.io/push.js/) which allows you to easily create native cross-browser notifications.
 
 To include in your project install the addon as usual
