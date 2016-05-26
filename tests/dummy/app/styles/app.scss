@@ -1,0 +1,172 @@
+body {
+  font-family: sans-serif;
+  max-width: 960px;
+  margin: 0 auto !important;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 0;
+  color: #444;
+}
+
+h3 {
+  margin-top: 0;
+  color: #ababab;
+}
+
+#github-link-button {
+  float: right;
+}
+
+.octicon-mark-github {
+  /*display: inline-block;*/
+  margin: -2px;
+  padding-right: 10px;
+}
+
+button, a.button {
+  cursor: pointer;
+  text-decoration: none;
+  background: #dedede;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  color: #444;
+  border-bottom: 2px solid #ababab;
+  vertical-align: baseline;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border: 1px solid #dedede;
+  margin: 40px 0;
+}
+
+.hljs {
+    display: block;
+    background: #f8f8f8;
+    color: #555555;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-javadoc {
+    color: #999999;
+    font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.javascript .hljs-title,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+    color: #cc99cc;
+    font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+    color: #f99157;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.tex .hljs-formula {
+    color: #99cc99;
+}
+
+.hljs-title,
+.hljs-id,
+.coffeescript .hljs-params,
+.scss .hljs-preprocessor {
+    color: #f2777a;
+    font-weight: bold;
+}
+
+.javascript .hljs-title,
+.lisp .hljs-title,
+.clojure .hljs-title,
+.hljs-subst {
+    color: #6699cc;
+    font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.haskell .hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+    color: #f99157;
+    font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+    color: #f2777a;
+    font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+    color: #f2777a;
+}
+
+.hljs-regexp {
+    color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+    color: #990073;
+}
+
+.hljs-built_in,
+.lisp .hljs-title,
+.clojure .hljs-built_in {
+    color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+    color: #999;
+    font-weight: bold;
+}
+
+.hljs-deletion {
+    background: #fdd;
+}
+
+.hljs-addition {
+    background: #dfd;
+}
+
+.diff .hljs-change {
+    background: #0086b3;
+}
+
+.hljs-chunk {
+    color: #aaa;
+}

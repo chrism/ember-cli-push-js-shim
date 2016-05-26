@@ -5,16 +5,6 @@ export default Ember.Route.extend({
   actions: {
     createNotification() {
       Push.create('Hello World!');
-    },
-
-    createTaggedNotification() {
-      Push.create('Hello World!', {
-        tag: 'example'
-      });
-    },
-
-    closeTaggedNotification() {
-      Push.close('example');
     }
   }
 });
