@@ -1,7 +1,7 @@
 @import 'fonts';
 
 body {
-  font-family: 'Arboria', sans-serif;
+  font-family: Arboria, sans-serif;
   max-width: 960px;
   margin: 20px auto !important;
   padding: 20px;
@@ -30,9 +30,17 @@ h3 {
   line-height: 0.9;
 }
 
-p {
+p, li {
   font-size: 20px;
   color: #444;
+}
+
+li strong {
+  font-weight: normal;
+}
+
+li {
+  font-weight: 200;
 }
 
 hr {
@@ -43,6 +51,12 @@ hr {
 .octicon-mark-github {
   margin: -2px;
   padding-right: 10px;
+}
+
+a {
+  color: #5582AF;
+  text-decoration: none;
+  border-bottom: 2px solid #5582AF;
 }
 
 button, a.button {
@@ -66,6 +80,11 @@ button, a.button {
   &:active {
     top: 2px;
   }
+}
+
+#installation-code .hljs-keyword {
+  color: #555555;
+  font-weight: normal;
 }
 
 .hljs {
