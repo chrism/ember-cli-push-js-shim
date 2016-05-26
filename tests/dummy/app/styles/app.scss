@@ -1,5 +1,12 @@
 @import 'fonts';
 
+$darkGrey: #444444;
+$midGrey: #ababab;
+$lightGrey: #dedede;
+
+$blue: #5582AF;
+$green: #63A963;
+
 body {
   font-family: Arboria, sans-serif;
   max-width: 960px;
@@ -9,38 +16,42 @@ body {
 
 h1 {
   margin: 0;
-  color: #444;
+  color: $darkGrey;
   font-weight: 200;
   font-size: 72px;
   line-height: 0.9;
-}
-
-h2 {
-  margin: 0;
-  color: #444;
-  font-weight: 200;
-  font-size: 48px;
+  text-align: center;
 }
 
 h3 {
   margin-top: 10px;
-  color: #ababab;
+  color: $midGrey;
   font-weight: 200;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 0.9;
+  text-align: center;
 }
 
-p, li {
+h2 {
+  margin: 0;
+  color: $darkGrey;
+  font-weight: 200;
+  font-size: 48px;
+}
+
+ul.options {
+  font-family: monospace;
+  font-size: 16px;
+  color: $darkGrey;
+}
+
+p {
   font-size: 20px;
-  color: #444;
+  color: $darkGrey;
 }
 
 li strong {
-  font-weight: normal;
-}
-
-li {
-  font-weight: 200;
+  color: $green;
 }
 
 hr {
@@ -48,15 +59,61 @@ hr {
   margin: 40px 0 30px 0;
 }
 
-.octicon-mark-github {
-  margin: -2px;
-  padding-right: 10px;
+.button-wrapper {
+  text-align: center;
+  
+  a.button.npm {
+    $npmColor: #cb3837;
+    background: $npmColor;
+    color: white;
+    border-color: darken($npmColor, 20%);
+    padding-left: 66px;
+
+    .npm-mark {
+      position: absolute;
+      left: 20px;
+      top: 13px;
+
+
+      .outline {
+        fill: white;
+      }
+
+      .interior {
+        fill: $npmColor;
+      }
+    }
+
+  }
+
+  a.button.github {
+    $githubColor: #4183c4;
+    background: $githubColor;
+    color: white;
+    border-color: darken($githubColor, 20%);
+    padding-left: 50px;
+
+    .octicon-mark-github {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+
+      path {
+        fill: white;
+      }
+    }
+  }
 }
 
 a {
+  position: relative;
   color: #5582AF;
   text-decoration: none;
   border-bottom: 2px solid #5582AF;
+
+  &:active {
+    top: 2px;
+  }
 }
 
 button, a.button {
@@ -64,14 +121,15 @@ button, a.button {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  background: #dedede;
   border-radius: 10px;
   padding: 10px 20px;
   border: none;
   font-size: 16px;
-  color: #444;
-  border-bottom: 2px solid #ababab;
   vertical-align: baseline;
+
+  color: $darkGrey;
+  background: $lightGrey;
+  border-bottom: 2px solid $midGrey;
 
   &:focus {
     outline: none;
@@ -82,27 +140,33 @@ button, a.button {
   }
 }
 
+button.primary {
+  color: white;
+  background: $blue;
+  border-bottom: 2px solid darken($blue, 20%);
+}
+
 #installation-code .hljs-keyword {
-  color: #555555;
+  color: $darkGrey;
   font-weight: normal;
 }
 
 .hljs {
-    display: block;
-    background: #f8f8f8;
-    color: #555555;
-    line-height: 1.5;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 16px;
+  display: block;
+  background: #f8f8f8;
+  color: $darkGrey;
+  line-height: 1.5;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 .hljs-comment,
 .hljs-template_comment,
 .diff .hljs-header,
 .hljs-javadoc {
-    color: #999999;
-    font-style: italic;
+  color: #999999;
+  font-style: italic;
 }
 
 .hljs-keyword,
@@ -113,63 +177,63 @@ button, a.button {
 .hljs-subst,
 .hljs-request,
 .hljs-status {
-    color: #5582AF;
-    font-weight: bold;
+  color: $blue;
+  font-weight: bold;
 }
 
 .hljs-number,
 .hljs-hexcolor,
 .ruby .hljs-constant {
-    color: #f99157;
+  color: #f99157;
 }
 
 .hljs-string,
 .hljs-tag .hljs-value,
 .hljs-phpdoc,
 .tex .hljs-formula {
-    color: #63A963;
+  color: $green;
 }
 
 .hljs-title,
 .hljs-id,
 .coffeescript .hljs-params,
 .scss .hljs-preprocessor {
-    color: #f2777a;
-    font-weight: bold;
+  color: #f2777a;
+  font-weight: bold;
 }
 
 .javascript .hljs-title,
 .lisp .hljs-title,
 .clojure .hljs-title,
 .hljs-subst {
-    color: #6699cc;
-    font-weight: normal;
+  color: #6699cc;
+  font-weight: normal;
 }
 
 .hljs-class .hljs-title,
 .haskell .hljs-type,
 .vhdl .hljs-literal,
 .tex .hljs-command {
-    color: #f99157;
-    font-weight: bold;
+  color: #f99157;
+  font-weight: bold;
 }
 
 .hljs-tag,
 .hljs-tag .hljs-title,
 .hljs-rules .hljs-property,
 .django .hljs-tag .hljs-keyword {
-    color: #f2777a;
-    font-weight: normal;
+  color: #f2777a;
+  font-weight: normal;
 }
 
 .hljs-attribute,
 .hljs-variable,
 .lisp .hljs-body {
-    color: #f2777a;
+  color: #f2777a;
 }
 
 .hljs-regexp {
-    color: #009926;
+  color: #009926;
 }
 
 .hljs-symbol,
@@ -177,13 +241,13 @@ button, a.button {
 .lisp .hljs-keyword,
 .tex .hljs-special,
 .hljs-prompt {
-    color: #990073;
+  color: #990073;
 }
 
 .hljs-built_in,
 .lisp .hljs-title,
 .clojure .hljs-built_in {
-    color: #0086b3;
+  color: #0086b3;
 }
 
 .hljs-preprocessor,
@@ -192,22 +256,22 @@ button, a.button {
 .hljs-doctype,
 .hljs-shebang,
 .hljs-cdata {
-    color: #999;
-    font-weight: bold;
+  color: #999;
+  font-weight: bold;
 }
 
 .hljs-deletion {
-    background: #fdd;
+  background: #fdd;
 }
 
 .hljs-addition {
-    background: #dfd;
+  background: #dfd;
 }
 
 .diff .hljs-change {
-    background: #0086b3;
+  background: #0086b3;
 }
 
 .hljs-chunk {
-    color: #aaa;
+  color: #aaa;
 }
