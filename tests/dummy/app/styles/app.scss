@@ -1,31 +1,53 @@
+@import 'fonts';
+
 body {
-  font-family: sans-serif;
+  font-family: 'Arboria', sans-serif;
   max-width: 960px;
-  margin: 0 auto !important;
+  margin: 20px auto !important;
   padding: 20px;
 }
 
 h1 {
-  margin-bottom: 0;
+  margin: 0;
   color: #444;
+  font-weight: 200;
+  font-size: 72px;
+  line-height: 0.9;
+}
+
+h2 {
+  margin: 0;
+  color: #444;
+  font-weight: 200;
+  font-size: 48px;
 }
 
 h3 {
-  margin-top: 0;
+  margin-top: 10px;
   color: #ababab;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 0.9;
 }
 
-#github-link-button {
-  float: right;
+p {
+  font-size: 20px;
+  color: #444;
+}
+
+hr {
+  border: 1px solid #dedede;
+  margin: 40px 0 30px 0;
 }
 
 .octicon-mark-github {
-  /*display: inline-block;*/
   margin: -2px;
   padding-right: 10px;
 }
 
 button, a.button {
+  position: relative;
+  display: inline-block;
   cursor: pointer;
   text-decoration: none;
   background: #dedede;
@@ -40,11 +62,10 @@ button, a.button {
   &:focus {
     outline: none;
   }
-}
 
-hr {
-  border: 1px solid #dedede;
-  margin: 40px 0;
+  &:active {
+    top: 2px;
+  }
 }
 
 .hljs {
@@ -54,6 +75,7 @@ hr {
     line-height: 1.5;
     padding: 10px;
     border-radius: 10px;
+    font-size: 16px;
 }
 
 .hljs-comment,
@@ -72,7 +94,7 @@ hr {
 .hljs-subst,
 .hljs-request,
 .hljs-status {
-    color: #cc99cc;
+    color: #5582AF;
     font-weight: bold;
 }
 
@@ -86,7 +108,7 @@ hr {
 .hljs-tag .hljs-value,
 .hljs-phpdoc,
 .tex .hljs-formula {
-    color: #99cc99;
+    color: #63A963;
 }
 
 .hljs-title,

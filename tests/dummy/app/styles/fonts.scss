@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Arboria';
+  src: url('/assets/fonts/Arboria-Bold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Arboria-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Arboria-Bold.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Arboria-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Arboria-Bold.svg#4bf794b351920bda00bb43eddeed9f41') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Arboria';
+  src: url('/assets/fonts/Arboria-Book.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Arboria-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Arboria-Book.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Arboria-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Arboria-Book.svg#2872b95fc65486968fd8f91b9ba5efbc') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Arboria';
+  src: url('/assets/fonts/Arboria-Light.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Arboria-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Arboria-Light.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Arboria-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Arboria-Light.svg#1a87d090c228a568d19bb813fce7b55f') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
